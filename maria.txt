@@ -1,0 +1,44 @@
+1.calculator.java i use extract method name:method1;
+
+bloaters smells .refactor use extract method .because here long method increase
+thats why long methods create code messy
+i extract this method
+
+2.calculator.java object oriented abusers .
+switch statement violate .i made interface and all class implements
+i use extract class and .clas i create abs,cos,sin,tan,log,rate,square,squareroot,rate etc
+here switch statement violate ,multiple statement .thats why if else 
+remove make interface and many classes
+extract superclass or subclass use 
+code remove if else 
+
+3.calculator.java 
+mode.equals(BiOperatorModes.normal instead use isbool .here 
+decompose conditional here refactor use .bloaters increase in long method .
+4.i also use meth2 refactor for extract methos .bloaters smell
+
+here are more smells long method,large class,large parameter list,switch statement violation  etc
+
+//////question answer 2//////
+i identified single instance create here
+
+class BufferedImageCustom {
+   public Image imageReturn() 
+      throws IOException {
+      Image image;
+      
+      InputStream bis = getClass().getResourceAsStream("/resources/icon/icon.png");
+      BufferedImage bImage2 = ImageIO.read(bis);
+      image = bImage2;
+      
+      return image;
+   }       
+} image and bImage2 create alwys single object
+
+i create design pattern solve new package
+name is usedesignpattern which contain main and run.singleton use .
+here we can use proxy pattern for image deep image load .one real another proxy,and also use prototype for clone...one  design pattern i applied it makes single instace .every time .if we apply prototype the its solve clone .
+
+
+/////question answer 3/////
+i create proxyui---proxy pattern follow.interface create pimage which method implements ui and proxyui,and main1 class create.here display method use
